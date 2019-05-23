@@ -1,7 +1,6 @@
-export function translate(input)
+export function translate(input = '')
 {
     let output = [];
-    input = typeof input === "undefined" ? '' : input;
 
     // Split the input into 3 char bits into an array, or give me an empty array
     const sequence = input.match(/.{3}/g) || [];
